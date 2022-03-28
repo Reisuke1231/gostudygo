@@ -13,11 +13,8 @@ type Capper struct {
 
 func (c *Capper) Write(p []byte) (n int, err error) {
 	diff := byte('a' - 'A')
-	fmt.Println(diff)
 
 	out := make([]byte, len(p))
-	fmt.Println(len(p))
-	fmt.Println(out)
 	for i, c := range p {
 		if c >= 'a' && c <= 'z' {
 			c -= diff

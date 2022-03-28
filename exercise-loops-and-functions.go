@@ -10,7 +10,7 @@ func Sqrt(x float64) float64 {
 	fmt.Println("-----")
 	for i := 0; i < 10; i++ {
 		z -= (z*z - x) / (2 * z)
-		fmt.Println(z)
+		fmt.Printf("%v: %v\n", i+1, z)
 	}
 
 	return z

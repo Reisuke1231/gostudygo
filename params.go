@@ -18,6 +18,7 @@ func doublePtr(n *int) {
 
 func main() {
 	values := []int{1, 2, 3, 4}
+	fmt.Println(values)
 	doubleAt(values, 2)
 	fmt.Println(values)
 

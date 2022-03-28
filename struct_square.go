@@ -55,5 +55,6 @@ func main() {
 
 	s.Move(2, 3)
 	fmt.Printf("%+v\n", s)
+	fmt.Printf("%v\n", s)
 	fmt.Println(s.Area())
 }
